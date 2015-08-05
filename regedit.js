@@ -17,17 +17,24 @@ child.on('close', function(err) {
 
 child.stdout.on('data', function(data) {
 	//console.log('STDOUT:' + data);
-	parseKey(data.toString('utf8'));
+	parseKey(data.toString('utf8'), 'JavaHome');
 });
 child.stderr.on('data', function(data) {
 	console.log('STDERR:' + data);
 });
 
-function parseKey(data, callBack) {
+function parseKey(data, searched, callBack) {
 	//console.dir(data.split('\r\n'));
-	_.each(data.split('\r\n'), function(item) {
-		if (item.search(/    /gm) !== -1) {
-			console.log(item);
+	var items = data.split('\r\n');
+	for (var i = 0; i < items.length; ++i) {
+		var keys = items[i].split('    ');
+		if (keys.length === 4) {
+			if (keys[1] === searched) {
+				console.log(keys[1]);
+				return keys;
+			}
 		}
-	});
+	}
+
+
 }
