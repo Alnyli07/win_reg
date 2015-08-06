@@ -96,13 +96,59 @@ function searchPaths(firstPath, searched, callBack) {
 	searchPath(firstPath, searched);
 }
 
-searchPaths('HKLM/SOFTWARE/Wow6432Node/JavaSoft', 'JavaHome', function(err, data) {
+searchPaths('HKLM/SOFTWARE/JavaSoft', 'JavaHome', function(err, data) {
 	if (err) {
-		console.dir(err.msg);
+
 	} else {
 		if (data) {
 			console.dir(data);
-			process.exit();
 		}
 	}
 });
+console.log('ali');
+
+function controlVersion(outputJava, javaVersion) { // control java version.
+	var items = javaVersion.split('.');
+	var searched = javaVersion;
+	if (items.length === 2) {
+		searched += '.\\d';
+	}
+	var reg = new RegExp(searched, 'gm');
+	var res = false;
+	if (outputJava.search(reg) !== -1) {
+		res = true;
+	}
+	return res;
+}
+
+function controlJavaVersion(version, callBack) {
+	var child = spawn('java', ['-version']);
+
+	var bufferStdOut = new Buffer('');
+	var bufferStdErr = new Buffer('');
+	child.stdout.on('data', function(data) {
+		bufferStdOut += data;
+	});
+
+	child.on('close', function(code) {
+		if (controlVersion((bufferStdOut + bufferStdErr).toString('utf8'), version)) {
+			callBack(true);
+		} else {
+			callBack(false);
+		}
+	});
+
+	child.stderr.on('data', function(data) {
+		bufferStdErr += data
+	});
+}
+
+controlJavaVersion('1.8', function(found) {
+	if (found) {
+		console.log('Java ' + 1.8 + ' bulundu.');
+	} else {
+		console.log('Java ' + 1.8 + ' bulunamadi.');
+	}
+})
+
+exports.controlJavaVersion = controlJavaVersion;
