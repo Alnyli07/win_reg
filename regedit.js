@@ -105,7 +105,6 @@ searchPaths('HKLM/SOFTWARE/JavaSoft', 'JavaHome', function(err, data) {
 		}
 	}
 });
-console.log('ali');
 
 function controlVersion(outputJava, javaVersion) { // control java version.
 	var items = javaVersion.split('.');
@@ -152,3 +151,4 @@ controlJavaVersion('1.8', function(found) {
 })
 
 exports.controlJavaVersion = controlJavaVersion;
+exports.search = searchPaths;
