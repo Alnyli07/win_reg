@@ -1,14 +1,18 @@
-# win_reg
+# reg_java
+
 Windows regedit  search operations.
 
+# npm test case
 ``
 npm test
 ``
 
+# node test case
 ``
 node test/test.js
 ``
 
+# output: test/test.js
 ``
 C:\Program Files (x86)\Java\jdk1.7.0_75/bin/java
 ``
@@ -39,5 +43,6 @@ C:\Program Files (x86)\Java\jdk1.7.0_75/bin/java
     type: 'REG_SZ',
     value: 'C:\\Program Files (x86)\\Java\\jre7' } ]
 ``
+
 will be implented as soon as.
 
