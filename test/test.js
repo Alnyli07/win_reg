@@ -11,8 +11,6 @@ reg.getJavaHome(1.7, function(err, data) {
 	}
 });
 
-
-
 //get JavaHome from HKLM/SOFTWARE and ignore directories 
 // [ microsoft', 'Classes', 'Wow6432Node/Classes', 'Wow6432Node/Microsoft'] while searching. 
 /** if not use ignoreList operation of search will be very slow.
