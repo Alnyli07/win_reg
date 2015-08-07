@@ -44,5 +44,9 @@ C:\Program Files (x86)\Java\jdk1.7.0_75/bin/java
     value: 'C:\\Program Files (x86)\\Java\\jre7' } ]
 ``
 
-will be implented as soon as.
+will continue to be implemented other functions.
+Such as:
+``
+	versionController // you can be controlled version of specific software. 
+``
 
