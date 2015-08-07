@@ -1,37 +1,37 @@
 {
-  "name": "reg_java",
-  "version": "0.0.1",
-  "description": "You can find JavaHome by the version and search any ticket in the regedit",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "node test/test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Alnyli07/win_reg.git"
-  },
-  "keywords": [
-    "regedit",
-    "javahome",
-    "find",
-    "java",
-    "find",
-    "version",
-    "of",
-    "java",
-    "win",
-    "reg"
-  ],
-  "author": "Alnyli07",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Alnyli07/win_reg/issues"
-  },
-  "homepage": "https://github.com/Alnyli07/win_reg",
-  "dependencies": {
-    "underscore": "^1.8.3"
-  }
+	"name": "reg_java",
+	"version": "0.0.3",
+	"description": "You can find JavaHome by the version and search any ticket in the regedit",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "node test/test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Alnyli07/win_reg.git"
+	},
+	"keywords": [
+		"regedit",
+		"javahome",
+		"find",
+		"java",
+		"find",
+		"version",
+		"of",
+		"java",
+		"win",
+		"reg"
+	],
+	"author": "Alnyli07",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Alnyli07/win_reg/issues"
+	},
+	"homepage": "https://github.com/Alnyli07/win_reg",
+	"dependencies": {
+		"underscore": "^1.8.3"
+	}
 }
