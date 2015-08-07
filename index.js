@@ -1,1 +1,1 @@
-exports = require('./lib/regedit');
+module.exports = require('./lib/regedit');
