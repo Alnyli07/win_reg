@@ -53,7 +53,7 @@ reg.search('HKLM/SOFTWARE/', 'JavaHome', function(err, data) {
 C:\Program Files (x86)\Java\jdk1.7.0_75/bin/java
 ``
 
-``
+```
 [
  { name: 'JavaHome',
     type: 'REG_SZ',
@@ -87,7 +87,7 @@ C:\Program Files (x86)\Java\jdk1.7.0_75/bin/java
     type: 'REG_SZ',
     value: 'C:\\Program Files (x86)\\Java\\jre7' } 
  ]
-``
+```
 
 will continue to be implemented other functions.
 Such as:
