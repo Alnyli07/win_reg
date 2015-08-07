@@ -30,8 +30,5 @@
 	"bugs": {
 		"url": "https://github.com/Alnyli07/win_reg/issues"
 	},
-	"dependencies": {
-		"underscore"
-	},
 	"homepage": "https://github.com/Alnyli07/win_reg"
 }
