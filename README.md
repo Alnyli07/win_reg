@@ -46,7 +46,7 @@ reg.search('HKLM/SOFTWARE/', 'JavaHome', function(err, data) {
 	}
 }, ['microsoft', 'Classes', 'Wow6432Node/Classes', 'Wow6432Node/Microsoft']);
 
-``
+```
 
 # output: test/test.js
 ``
