@@ -2,6 +2,10 @@
 
 Windows regedit  search operations.
 
+[![Build Status](https://travis-ci.org/Alnyli07/win_reg.svg?branch=master)](https://travis-ci.org/Alnyli07/win_reg)
+
+[![NPM](https://nodei.co/npm/reg_java.png?compact=true)](https://nodei.co/npm/reg_java/)
+
 # npm test case
 ``
 npm test
