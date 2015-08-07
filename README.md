@@ -12,7 +12,7 @@ npm test
 node test/test.js
 ``
 # Example Code for using
-``js
+```js
 
 var reg = require('reg_java');
 
